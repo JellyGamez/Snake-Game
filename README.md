@@ -1,5 +1,5 @@
 # Snake-Game
- Simple snake game written in C++. Also my first project ever made
+ Simple snake game written in C++ (python would've been funnier :c). Also my first project ever made
 ## Features
 - Move using **W A S D**
 - Keeping track of the current score and highscore
