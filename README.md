@@ -7,12 +7,18 @@
 ## Project setup
 - Windows
 
-`g++ main.cpp`
+```sh
+g++ main.cpp
+```
 
 - Linux
 
-`sudo apt-get install ncurses-dev`
+```sh
+sudo apt-get install ncurses-dev
+```
 
-`g++ main.cpp -lncurses`
+```sh
+g++ main.cpp -lncurses
+```
 ## Note
  The default terminal window may be too small, so make sure to resize it to fit the whole board and menu.
