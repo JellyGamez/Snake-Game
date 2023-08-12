@@ -5,6 +5,7 @@
 #include <conio.h>
 #define print printf
 #define refresh()
+#define endwin()
 #else
 #include <unistd.h>
 #include <ncurses.h>
@@ -238,8 +239,9 @@ int main()
                 newGame();
                 clearScreen();
                 continue;
-            case 'q':
+            case 'q';
                 clearScreen();
+                endwin();
                 return 0;
             case 'c':
             {
@@ -297,8 +299,6 @@ int main()
         if (start)
             continueMovement();
     }
-#ifndef _WIN32
     endwin();
-#endif
     return 0;
 }
