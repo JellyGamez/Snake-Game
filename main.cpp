@@ -4,12 +4,14 @@
 #include <windows.h>
 #include <conio.h>
 #define print printf
+#define scan scanf
 #define refresh()
 #define endwin()
 #else
 #include <unistd.h>
 #include <ncurses.h>
 #define print printw
+#define scan scanw
 #endif
 using namespace std;
 pair<int, int> tail[626];
@@ -43,9 +45,28 @@ void sleep(int ms)
 }
 int readnumber()
 {
-    int x;
-    cin >> x;
-    return x;
+    int ans = 0;
+#ifndef _WIN32
+    nodelay(stdscr, FALSE);
+    echo();
+#endif
+
+    char x[2000];
+    do
+    {
+        print("Enter a new value for the time between screen updates (in milliseconds) : ");
+        refresh();
+        scan("%s", x);
+        ans = strtol(x, NULL, 10);
+        if (ans <= 0)
+            print("Invalid input.\n");
+    } while (ans <= 0);
+
+#ifndef _WIN32
+    noecho();
+    nodelay(stdscr, TRUE);
+#endif
+    return ans;
 }
 void generateRandom()
 {
@@ -110,31 +131,31 @@ void printGame()
         switch (i)
         {
         case 7:
-            print("             Change the snake speed - c");
+            print("          Change the snake speed - c");
             break;
         case 8:
-            print("             New game - n");
+            print("          New game - n");
             break;
         case 9:
-            print("             Quit - q");
+            print("          Quit - q");
             break;
         case 11:
-            print("             Up - w");
+            print("          Up - w");
             break;
         case 12:
-            print("             Down - s");
+            print("          Down - s");
             break;
         case 13:
-            print("             Left - a");
+            print("          Left - a");
             break;
         case 14:
-            print("             Right - d");
+            print("          Right - d");
             break;
         case 16:
-            print("             Score - %d", score);
+            print("          Score - %d", score);
             break;
         case 17:
-            print("             Highscore - %d", highscore);
+            print("          Highscore - %d", highscore);
         }
         print("\n");
     }
@@ -217,10 +238,10 @@ int main()
 {
 #ifndef _WIN32
     initscr();
-    raw();
-    keypad(stdscr, TRUE);
     nodelay(stdscr, TRUE);
+    keypad(stdscr, TRUE);
     noecho();
+    cbreak();
 #endif
     newGame();
     while (1)
@@ -246,8 +267,6 @@ int main()
             case 'c':
             {
                 clearScreen();
-                print("Enter a new value for the time between screen updates (in milliseconds) : ");
-                refresh();
                 speed = readnumber();
                 clearScreen();
                 continue;
