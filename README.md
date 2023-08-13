@@ -12,7 +12,7 @@ The code could use some refinement, considering I was in my early stages of lear
 
 ```sh
 g++ main.cpp -o main
-./main.exe
+./main
 ```
 
 - Linux
@@ -20,7 +20,7 @@ g++ main.cpp -o main
 ```sh
 sudo apt-get install ncurses-dev
 g++ main.cpp -lncurses -o main
-./main.exe
+./main
 ```
 
 ## Note
