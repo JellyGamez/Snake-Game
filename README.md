@@ -6,19 +6,21 @@ The code could use some refinement, considering I was in my early stages of lear
 - Move using **W A S D**
 - Keeping track of the current score and highscore
 - Options to change the snake speed, start a new game or quit
-- 
+
 ## Project setup
 - Windows
 
 ```sh
-g++ main.cpp
+g++ main.cpp -o main
+./main.exe
 ```
 
 - Linux
 
 ```sh
 sudo apt-get install ncurses-dev
-g++ main.cpp -lncurses
+g++ main.cpp -lncurses -o main
+./main.exe
 ```
 
 ## Note
