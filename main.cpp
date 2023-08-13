@@ -239,7 +239,7 @@ int main()
                 newGame();
                 clearScreen();
                 continue;
-            case 'q';
+            case 'q':
                 clearScreen();
                 endwin();
                 return 0;
