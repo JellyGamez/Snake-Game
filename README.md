@@ -1,4 +1,4 @@
-# Snake-Game
+# Snake
 My very first project - a straightforward snake game written in C++ (python would've been funnier :c). 
 The code could use some refinement, considering I was in my early stages of learning programming at the time.
  
