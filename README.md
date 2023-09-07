@@ -1,25 +1,44 @@
 # Snake
-My very first project - a straightforward snake game written in C++ (python would've been funnier :c). 
+My very first project - a straightforward snake game written in C++. 
 The code could use some refinement, considering I was in my early stages of learning programming at the time.
  
 ## Features
 - Move using **W A S D**
-- Keeping track of the current score and highscore
-- Options to change the snake speed, start a new game or quit
+- Monitor your current score and highscore
+- Options to adjust the snake speed, start a new game or quit
 
-## Project setup
-- Windows
+
+## Getting started
+
+### 1. Clone the project
 
 ```sh
-g++ main.cpp -o main
-./main
+  git clone https://github.com/JellyGamez/Snake.git
+```
+
+### 2. Go to the project directory
+
+```sh
+  cd Snake
+```
+
+### 3. Compile
+
+- Windows
+```sh
+  g++ main.cpp -o main
 ```
 
 - Linux
+The linux version uses an external library you need to install:
+```sh
+  sudo apt-get install ncurses-dev
+  g++ main.cpp -lncurses -o main
+```
+
+### 4. Launch the game
 
 ```sh
-sudo apt-get install ncurses-dev
-g++ main.cpp -lncurses -o main
 ./main
 ```
 
