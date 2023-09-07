@@ -13,28 +13,28 @@ The code could use some refinement, considering I was in my early stages of lear
 ### 1. Clone the project
 
 ```sh
-  git clone https://github.com/JellyGamez/Snake.git
+git clone https://github.com/JellyGamez/Snake.git
 ```
 
 ### 2. Go to the project directory
 
 ```sh
-  cd Snake
+cd Snake
 ```
 
 ### 3. Compile
 
 - Windows
 ```sh
-  g++ main.cpp -o main
+g++ main.cpp -o main
 ```
 
 - Linux
   
 The linux version uses an external library you need to install:
 ```sh
-  sudo apt-get install ncurses-dev
-  g++ main.cpp -lncurses -o main
+sudo apt-get install ncurses-dev
+g++ main.cpp -lncurses -o main
 ```
 
 ### 4. Launch the game
