@@ -30,6 +30,7 @@ The code could use some refinement, considering I was in my early stages of lear
 ```
 
 - Linux
+  
 The linux version uses an external library you need to install:
 ```sh
   sudo apt-get install ncurses-dev
