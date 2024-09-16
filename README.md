@@ -43,4 +43,4 @@ g++ main.cpp -lncurses -o main
 ```
 
 ## Note
- The default terminal window may be too small, so make sure to resize it to fit the whole board and menu.
+The default terminal window may be too small, so make sure to resize it to fit the whole board and menu.
