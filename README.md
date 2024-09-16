@@ -7,8 +7,7 @@ The code could use some refinement, considering I was in my early stages of lear
 - Monitor your current score and highscore
 - Options to adjust the snake speed, start a new game or quit
 
-
-## Getting started
+## Quick Start
 
 ### 1. Clone the project
 
