@@ -26,6 +26,7 @@ cd Snake
 ```sh
 sudo apt-get install ncurses-dev
 ```
+
 ### 4. Compile
 
 ```sh
