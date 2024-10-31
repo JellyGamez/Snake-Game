@@ -21,22 +21,18 @@ git clone https://github.com/JellyGamez/Snake.git
 cd Snake
 ```
 
-### 3. Compile
+### 3. Install dependencies (Linux only)
 
-- Windows
-```sh
-g++ main.cpp -o main
-```
-
-- Linux
-  
-The linux version uses an external library you need to install:
 ```sh
 sudo apt-get install ncurses-dev
-g++ main.cpp -lncurses -o main
+```
+### 4. Compile
+
+```sh
+make
 ```
 
-### 4. Launch the game
+### 5. Launch the game
 
 ```sh
 ./main
