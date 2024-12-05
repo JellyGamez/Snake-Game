@@ -1,3 +1,8 @@
+<div align="center">
+  
+  ![image](https://github.com/user-attachments/assets/81424352-e214-450c-a9a9-b4345347048d)
+
+</div>
 <h1 align="center">
   Snake
 </h1>
