@@ -1,3 +1,8 @@
+<div align="center">
+  
+  ![image](https://github.com/user-attachments/assets/81424352-e214-450c-a9a9-b4345347048d)
+
+</div>
 <h1 align="center">
   Snake
 </h1>
@@ -5,7 +10,7 @@
 My very first project - a straightforward snake game written in C++. 
 The code could use some refinement, considering I was in my early stages of learning programming at the time.
  
-## ⭐ Features
+## 🛠️ Features
 - Move using **W A S D**
 - Monitor your current score and highscore
 - Options to adjust the snake speed, start a new game or quit
