@@ -52,14 +52,15 @@ int readnumber()
 #endif
 
     char x[2000];
+    print("\n\n");
     do
     {
-        print("Enter a new value for the time between screen updates (in milliseconds) : ");
+        print("    Enter a new value for the time between screen updates (in milliseconds) : ");
         refresh();
         scan("%s", x);
         ans = strtol(x, NULL, 10);
         if (ans <= 0)
-            print("Invalid input.\n");
+            print("    Invalid input.\n");
     } while (ans <= 0);
 
 #ifndef _WIN32
@@ -118,13 +119,13 @@ void reposition()
 void printGame()
 {
     print("\n\n");
-    print("  ");
+    print("    ");
     for (int i = 0; i < dim + 2; i++)
         print("# ");
     print("\n");
     for (int i = 0; i < dim; i++)
     {
-        print("  # ");
+        print("    # ");
         for (int j = 0; j < dim; j++)
         {
             print("%c ", printChar[x[i][j]]);
@@ -161,7 +162,7 @@ void printGame()
         }
         print("\n");
     }
-    print("  ");
+    print("    ");
     for (int i = 0; i < dim + 2; i++)
         print("# ");
     sleep(speed);
@@ -298,15 +299,15 @@ int main()
         if (gameOver)
         {
             clearScreen();
-            print("Game Over!\n");
+            print("\n\n    Game Over!\n");
             if (score > highscore)
             {
                 highscore = score;
-                print("New highscore - %d", score);
+                print("    New highscore - %d", score);
             }
             else
-                print("Score - %d", score);
-            print("\nStarting new game");
+                print("    Score - %d", score);
+            print("\n    Starting new game");
             refresh();
             gameOver = 0;
             sleep(500);
