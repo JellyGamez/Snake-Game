@@ -1,12 +1,11 @@
+<h1 align="center">
+  Snake
+</h1>
 <div align="center">
   
   ![image](https://github.com/user-attachments/assets/bbba0e78-cdbd-4143-adf2-e3f463e363a9)
 
 </div>
-<h1 align="center">
-  Snake
-</h1>
-
 My very first project - a straightforward snake game written in C++. 
 The code could use some refinement, considering I was in my early stages of learning programming at the time.
  
