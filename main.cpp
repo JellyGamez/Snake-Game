@@ -117,12 +117,14 @@ void reposition()
 }
 void printGame()
 {
+    print("\n\n");
+    print("  ");
     for (int i = 0; i < dim + 2; i++)
         print("# ");
     print("\n");
     for (int i = 0; i < dim; i++)
     {
-        print("# ");
+        print("  # ");
         for (int j = 0; j < dim; j++)
         {
             print("%c ", printChar[x[i][j]]);
@@ -159,6 +161,7 @@ void printGame()
         }
         print("\n");
     }
+    print("  ");
     for (int i = 0; i < dim + 2; i++)
         print("# ");
     sleep(speed);
